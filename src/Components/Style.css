@@ -1,0 +1,190 @@
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* menubar section */
+
+.navbar{
+    top: 0;
+}
+/* advertisment section */
+
+.advertisements{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+    width: 140%;
+    
+    overflow-x: hidden;
+    white-space: nowrap;
+    animation: 8s addver-slide infinite linear;
+}
+.add-slider > img{
+    object-fit: fill;
+    width: 15rem;
+    
+}
+
+.add-slider{
+    border:6px solid saddlebrown ;
+   /* width: 30rem; */
+   
+
+}
+
+@keyframes addver-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-80%);
+    }
+}
+
+
+/* product-cart section */
+
+.products{
+    margin-top: 5rem;
+ padding:0 5rem;
+ background: linear-gradient(to bottom, #212529c4, #fff);
+padding-bottom: 3rem;
+}
+
+.product-heading{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+    padding-top: 3rem;
+}
+
+.product-heading > h1{
+   
+    font-weight: 700;
+}
+
+
+
+.products > div{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+
+.products-cart{
+    width: 20rem;
+   background-color: white;
+   padding: 1rem 1rem;
+   /* margin-right: 5rem; */
+   margin-top: 3rem;
+   box-shadow: -1px -2px 9px black;
+}
+
+.products-cart > div{
+ display: flex;
+ align-items: center;
+ 
+}
+
+.products-cart > div > h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: green;
+}
+
+.product-img{
+    width: 15rem;
+    height: 15rem;
+   object-fit:fill; 
+
+}
+
+/* login  details*/
+
+.login{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+     justify-content: center;
+     gap: 3rem;
+}
+
+.login-Details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    box-shadow: 0px 1px 3px black;
+    padding: 2rem 1.5rem;
+}
+
+.login-Details > input{
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+
+}
+
+.login-Details > button{
+    width: 4rem;
+    border: none;
+    /* box-shadow: 0px 1px 3px black; */
+    background-color: green;
+    padding: 0.2rem 0.5rem;
+    color: white;
+}
+
+
+/* products-Details section */
+
+.prod-detail-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.products-Details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 0px 5px black;
+    gap: 7rem;
+    background-color: white;
+    padding:2rem 5rem;
+    width: 80rem;
+}
+
+
+.products-Details-details > div{
+    display: flex;
+    align-items: center;
+
+}
+
+.products-Details-img > img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.cart-icon{
+ margin-right: 3rem;
+ display: flex;
+}
+
+
+.cart-icon > p{
+    color: white;
+}
